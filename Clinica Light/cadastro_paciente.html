@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(45deg,rgb(107, 107, 107),rgb(32, 32, 32));
+        }
+        .conteiner{
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 60%;
+    color: bisque;
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 5px;
+    border-radius: 15px;
+    
+        }
+       
+              
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label, input[type="text"], input[type="date"] {
+            display: block;
+            margin-top: 2px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            margin-top: 2px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007bff;
+        }
+        label{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+  
+    <div>
+        <h1>Cadastro de Paciente</h1>
+    <form>
+        <label for="nome-paciente">Nome do Paciente:</label>
+        <input type="text" id="nome-paciente" name="nome-paciente" required>
+        
+        <label for="rg">Número do RG:</label>
+        <input type="text" id="rg" name="rg" required>
+        
+        <label for="orgao-emissor">Órgão Emissor:</label>
+        <input type="text" id="orgao-emissor" name="orgao-emissor">
+        
+        <label for="cpf">Número do CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+        
+        <label for="complemento">Número Complemento:</label>
+        <input type="text" id="complemento" name="complemento">
+        
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro">
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+        
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone">
+        
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular">
+        
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+        
+        <label for="possui-convenio">Possui Convênio:</label>
+        <input type="checkbox" id="possui-convenio" name="possui-convenio">
+        
+        <label for="nome-convenio">Nome do Convênio:</label>
+        <input type="text" id="nome-convenio" name="nome-convenio">
+        
+        <input type="submit" value="Enviar">
+      </form>
+      
+</div>
+</div>
+    
+</body>
+</html>
